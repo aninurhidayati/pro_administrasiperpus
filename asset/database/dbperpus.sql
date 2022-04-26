@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2022 at 05:08 AM
+-- Generation Time: Apr 26, 2022 at 06:53 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -24,6 +24,56 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `mst_dataagt`
+--
+
+CREATE TABLE `mst_dataagt` (
+  `id_anggota` int(11) NOT NULL,
+  `nm_angggota` varchar(100) NOT NULL,
+  `status_anggota` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mst_databuku`
+--
+
+CREATE TABLE `mst_databuku` (
+  `id_buku` int(11) NOT NULL,
+  `judul_buku` varchar(100) NOT NULL,
+  `pengarang_buku` varchar(100) NOT NULL,
+  `jumlah_buku` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mst_datapinjam`
+--
+
+CREATE TABLE `mst_datapinjam` (
+  `id_peminjam` int(11) NOT NULL,
+  `nm_peminjam` varchar(100) NOT NULL,
+  `nm_buku` varchar(100) NOT NULL,
+  `tgl_pinjam` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mst_kategbuku`
+--
+
+CREATE TABLE `mst_kategbuku` (
+  `id_buku` int(11) NOT NULL,
+  `nm_buku` varchar(100) NOT NULL,
+  `kt_buku` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `mst_userlogin`
 --
 
@@ -38,6 +88,30 @@ CREATE TABLE `mst_userlogin` (
 --
 
 --
+-- Indexes for table `mst_dataagt`
+--
+ALTER TABLE `mst_dataagt`
+  ADD PRIMARY KEY (`id_anggota`);
+
+--
+-- Indexes for table `mst_databuku`
+--
+ALTER TABLE `mst_databuku`
+  ADD PRIMARY KEY (`id_buku`);
+
+--
+-- Indexes for table `mst_datapinjam`
+--
+ALTER TABLE `mst_datapinjam`
+  ADD PRIMARY KEY (`id_peminjam`);
+
+--
+-- Indexes for table `mst_kategbuku`
+--
+ALTER TABLE `mst_kategbuku`
+  ADD PRIMARY KEY (`id_buku`);
+
+--
 -- Indexes for table `mst_userlogin`
 --
 ALTER TABLE `mst_userlogin`
@@ -46,6 +120,30 @@ ALTER TABLE `mst_userlogin`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `mst_dataagt`
+--
+ALTER TABLE `mst_dataagt`
+  MODIFY `id_anggota` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `mst_databuku`
+--
+ALTER TABLE `mst_databuku`
+  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `mst_datapinjam`
+--
+ALTER TABLE `mst_datapinjam`
+  MODIFY `id_peminjam` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `mst_kategbuku`
+--
+ALTER TABLE `mst_kategbuku`
+  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `mst_userlogin`
