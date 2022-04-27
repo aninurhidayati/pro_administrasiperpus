@@ -1,6 +1,6 @@
 <?php
-    require_once("../config/config.php");
-    require_once("../config/koneksi.php");
+    require_once("config/config.php");
+    require_once("config/koneksi.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css"/>
-	  <link rel="stylesheet" href="../asset/style.css"/>
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css"/>
+	  <link rel="stylesheet" href="asset/style.css"/>
 </head>
 <body>
   <div class="container d-flex justify-content-center mt-5 pt-5">
@@ -29,5 +29,6 @@
         <button type="submit" class="btn btn-primary" name="btnlogin">Submit</button>
     </form>      
   </div>
+  <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

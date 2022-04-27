@@ -10,6 +10,7 @@ require_once("../config/koneksi.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-secondary">
@@ -18,22 +19,22 @@ require_once("../config/koneksi.php");
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Admin Perpus</a>
+      <a class="navbar-brand">Admin Perpus</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
         </li>
     </div>
   </div>
 </nav>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 my-4 mx-4">
+        <div class="col-md-2 my-4 mx-3">
             <?php
                 include_once("menu.php");
             ?>
         </div>
-        <div class="col-md-10 bg-info">
+        <div class="col-md-9 ">
         <?php
             if(isset($_GET['modul'])){
               include "".$_GET['modul']."/index.php";
