@@ -9,4 +9,5 @@
             echo "<h3>Silahkan coba lagi";
             exit;
     }
+    mysqli_select_db($koneksi_db, $database);   
 ?>

@@ -10,10 +10,10 @@ if(isset($_GET['act']) && ($_GET['act']== "update" || $_GET['act'] == "save")){
 
     // fungsi CRUD
     if(isset($_GET['act']) && ($_GET['act']=="add")){
-        $judul1="Form Input Data Buku";
+        $judul1="Form Input Kategori Buku";
         }
         else if(isset($_GET['act']) && ($_GET['act']=="edit")){
-            $judul="Form Edit Data Buku";
+            $judul="Form Edit Kategori Buku";
             $idkey=$_GET['id'];
             $qbuku=mysqli_query($koneksi_db,"select * from mst_kategbuku where id_buku= '$idkey'") or die(mysqli_error($koneksi_db));
             $databuku=mysqli_fetch_array($qbuku);
