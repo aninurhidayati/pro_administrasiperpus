@@ -7,10 +7,11 @@
 <a href="?modul=mod_userlogin&act=add" class="btn btn-outline-primary my-4">Tambah Data</a>
 <table class="table table-bordered">
     <tr>
-        <th>ID user</th>
-        <th>username</th>
-        <th>password</th>
-        <th>is active</th>
+        <th class="bg-success text-white">ID user</th>
+        <th  class="bg-success text-white">username</th>
+        <th  class="bg-success text-white">password</th>
+        <th  class="bg-success text-white">is active</th>
+        <th  class="bg-success text-white">action</th>
     </tr>
     <tr>
     <?php
@@ -74,26 +75,26 @@
 ?>
 <div class="container-fluid my-4">
     <h3><?= $judulb ?></h3>
-    <form action="mod_userlogin/user_ctrl.php?modul=mod_userlogin&act=update" method="POST">
+        <form action="mod_userlogin/user_ctrl.php?modul=mod_userlogin&act=update" method="POST">
+            <div class="row my-2">
+                <div class="col-md-2">
+                    <label for="txt_user" class="form-label">username</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="hidden" class="form-control" name="id_user" id="id_user" value="<?= $data['id_user']?>">
+                    <input type="text" name="txt_user" class="form-control" value="<?=$data['username'];?>">
+                </div>
+            </div>
         <div class="row my-2">
-            <div class="col-md-2">
-                <label for="txt_user" class="form-label">username</label>
-            </div>
-            <div class="col-md-6">
-                <input type="hidden" class="form-control" name="id_user" id="id_user" value="<?= $data['id_user']?>">
-                <input type="text" name="txt_user" class="form-control" value="<?=$data['username'];?>">
-            </div>
-        </div>
-        <div class="row my-2">
-            <div class="col-md-2">
-                <label for="txt_pass" class="form-label">password</label>
-            </div>
-            <div class="col-md-6">
-                <input type="password" name="txt_pass" class="form-control" value="<?=$data['password'];?>"><br>
-                <input type="checkbox" name="ck_aktif" id="ck_aktif" class="form-check-input" <?php echo $check; ?>>aktif <br>
-                <button type="submit" class="btn btn-outline-success">
-                    <i class="bi bi-check-circle-fill"> submit</i>
-                </button>
+                <div class="col-md-2">
+                    <label for="txt_pass" class="form-label">password</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" name="txt_pass" class="form-control" value="<?=$data['password'];?>"><br>
+                        <input type="checkbox" name="ck_aktif" id="ck_aktif" class="form-check-input" <?php echo $check; ?>>aktif <br>
+                    <button type="submit" class="btn btn-outline-success">
+                        <i class="bi bi-check-circle-fill"> submit</i>
+                    </button>
                 <button type="cancel" class="btn btn-outline-danger">
                     <i class="bi bi-x-circle-fill"> reset</i> 
                 </button>

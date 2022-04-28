@@ -9,6 +9,8 @@
         <th>nama buku</th>
         <th>tgl pinjam</th>
     </tr>
+    <?php
+    ?>
     <tr>    
             <td></td>
             <td></td>
