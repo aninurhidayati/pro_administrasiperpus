@@ -52,7 +52,7 @@ if(isset($_GET['act']) && ($_GET['act']=="add")){
            }
            $dataupdate=mysqli_query($koneksi_db,"UPDATE mst_userlogin SET username='$up_user',password='$up_pass',is_active='$aktif' WHERE id_user='$userid'");
            if($dataupdate){
-               header("Location:http://localhost/project_uts_AdministrasiPerpus/pro_administrasiperpus/admin/home.php?modul=mod_userlogin");
+               header("Location:http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_userlogin");
            }
        }
        else if(isset($_GET['act']) && ($_GET['act']=="delete")){
@@ -61,7 +61,7 @@ if(isset($_GET['act']) && ($_GET['act']=="add")){
            $datadelete=mysqli_query($koneksi_db,
            "DELETE FROM mst_userlogin WHERE id_user='$id_user' ");
            if($datadelete){
-               header("Location:http://localhost/project_uts_AdministrasiPerpus/pro_administrasiperpus/admin/home.php?modul=mod_userlogin");
+               header("Location:http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_userlogin");
            }
        }
        
