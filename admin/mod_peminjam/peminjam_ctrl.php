@@ -26,7 +26,7 @@ else if(isset($_GET['act']) && ($_GET['act'])=="save"){
     "INSERT into mst_datapinjam (nm_peminjam,nm_buku,tgl_pinjam) VALUES ('$n_pinjam', '$n_buku', '$tgl_buku')")
     or die(mysqli_error($koneksi_db));
     if($qinsert){
-        header ("Location: http:../home.php?modul=mod_peminjam");
+        header ("Location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_peminjam");
     }
 }
 else if(isset($_GET['act']) && ($_GET['act'])=="update"){
@@ -34,10 +34,10 @@ else if(isset($_GET['act']) && ($_GET['act'])=="update"){
     $n_pinjam =$_POST['txt_nmpinjam'];
     $n_buku =$_POST['txt_nmbuku'];
     $tgl_buku =$_POST['txt_tglpinjam'];
-    $qiup =mysqli_query($koneksi_db, "UPDATE mst_datapinjam set nm_peminjam='$n_pinjam', nm_buku='$n_buku', tgl_buku='$tgl_buku' 
+    $qiup =mysqli_query($koneksi_db, "UPDATE mst_datapinjam set nm_peminjam='$n_pinjam', nm_buku='$n_buku', tgl_pinjam='$tgl_buku' 
     WHERE id_peminjam=$keyid") or die(mysqli_error($koneksi_db));
     if($qiup){
-        header("location: http:../home.php?modul=mod_peminjam");
+        header("location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_peminjam");
     }
 }
 else if(isset($_GET['act']) && ($_GET['act'])=="delete"){
@@ -45,7 +45,7 @@ else if(isset($_GET['act']) && ($_GET['act'])=="delete"){
     $qidel = mysqli_query($koneksi_db, "DELETE from mst_datapinjam WHERE id_peminjam=$keyid")
     or die(mysqli_error($koneksi_db));
     if($qidel){
-        header("location: http:../home.php?modul=mod_peminjam");
+        header("location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_peminjam");
     }
 }
 ?>  

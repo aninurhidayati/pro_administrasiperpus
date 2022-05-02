@@ -75,7 +75,7 @@
                 <button type="submit" class="btn btn-outline-success">
                     <i class="bi bi-check-circle-fill"> submit</i>
                 </button>
-                <button type="cancel" class="btn btn-outline-danger">
+                <button type="reset" class="btn btn-outline-danger">
                     <i class="bi bi-x-circle-fill"> reset</i> 
                 </button>
             </div>
@@ -123,7 +123,7 @@
                     <button type="submit" class="btn btn-outline-success">
                         <i class="bi bi-check-circle-fill"> submit</i>
                     </button>
-                <button type="cancel" class="btn btn-outline-danger">
+                <button type="reset" class="btn btn-outline-danger">
                     <i class="bi bi-x-circle-fill"> reset</i> 
                 </button>
             </div>

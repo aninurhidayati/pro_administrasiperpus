@@ -33,7 +33,7 @@ if(isset($_GET['act']) && ($_GET['act']== "update" || $_GET['act'] == "save")){
                
             mysqli_query($koneksi_db,"UPDATE mst_kategbuku SET nm_buku='$up_nmbuku',kt_buku='$up_katbuku' WHERE id_buku='$idbuk'");
             
-            header("Location:http://localhost/project_uts_AdministrasiPerpus/pro_administrasiperpus/admin/home.php?modul=mod_katbuku");
+            header("Location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_katbuku");
         }
            else if(isset($_GET['act']) && ($_GET['act']=="delete")){
                $idbuku=$_GET['id'];
@@ -41,6 +41,6 @@ if(isset($_GET['act']) && ($_GET['act']== "update" || $_GET['act'] == "save")){
                $datadelete=mysqli_query($koneksi_db,
                "DELETE FROM mst_kategbuku WHERE id_buku='$idbuku' ");
             
-                   header("Location:http://localhost/project_uts_AdministrasiPerpus/pro_administrasiperpus/admin/home.php?modul=mod_katbuku");
+            header("Location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_katbuku");
            }
         ?>

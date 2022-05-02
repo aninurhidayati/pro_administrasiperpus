@@ -37,7 +37,7 @@ else if(isset($_GET['act']) && ($_GET['act'])=="save"){
     "INSERT into mst_menu (nm_menu,link,isActive) VALUES ('$nmenu', '$nlink', '$aktif')")
     or die(mysqli_error($koneksi_db));
     if($datainsert){
-        header("Location: http:../home.php?modul=mod_menu");
+        header("Location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_menu");
     }
 }
 else if(isset($_GET['act']) && ($_GET['act'])=="update"){
@@ -47,7 +47,7 @@ else if(isset($_GET['act']) && ($_GET['act'])=="update"){
     $qiup =mysqli_query($koneksi_db, "UPDATE mst_menu set nm_menu='$nmenu', link='$nlink' 
     WHERE id_menu=$keyid") or die(mysqli_error($koneksi_db));
     if($qiup){
-        header("location: http:../home.php?modul=mod_menu");
+        header("location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_menu");
     }
 }
 else if(isset($_GET['act']) && ($_GET['act'])=="delete"){
@@ -55,7 +55,7 @@ else if(isset($_GET['act']) && ($_GET['act'])=="delete"){
     $qidel = mysqli_query($koneksi_db, "DELETE from mst_menu WHERE id_menu=$keyid")
     or die(mysqli_error($koneksi_db));
     if($qidel){
-        header("location: http:../home.php?modul=mod_menu");
+        header("location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_menu");
     }
 }
 ?>
