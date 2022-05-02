@@ -19,7 +19,7 @@ else{
         or die(mysqli_error($koneksi_db));
         $data = mysqli_fetch_array($qiagt);
     }
-    else if(isset($_GET['act']) && ($_GET['act'])=="save"){
+    else if(isset($_GET['act']) && ($_GET['act']=="save")){
         $nmagt = $_POST['txt_agt'];
         $stsagt = $_POST['txt_status'];
         $qiagt = mysqli_query($koneksi_db, "INSERT into mst_dataagt(nm_anggota,status_anggota) VALUES ('$nmagt','$stsagt')");
