@@ -1,6 +1,6 @@
 <?php
     $username="localhost";
-    $database="adminPerpus";
+    $database="adminperpus";
     $user_db="root";
     $pass_db="";
 

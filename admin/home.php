@@ -8,12 +8,22 @@ require_once("../config/koneksi.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Perpus</title>
     <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <style>
+      .font{
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 20px;
+      }
+    </style>
 </head>
-<body>
-<nav class="navbar navbar-expand-md navbar-light bg-secondary">
+<body class="font">
+<nav class="navbar navbar-expand-md navbar-light bg-success">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
