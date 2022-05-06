@@ -44,7 +44,13 @@ else if(isset($_GET['act']) && ($_GET['act'])=="update"){
     $keyid =$_POST['txt_id'];
     $nmenu =$_POST['txt_menu'];
     $nlink =$_POST['txt_link'];
-    $qiup =mysqli_query($koneksi_db, "UPDATE mst_menu set nm_menu='$nmenu', link='$nlink' 
+    if(isset($_POST['ck_aktif'])){
+        $aktif=1;
+    }
+    else{
+        $aktif=0;
+    }
+    $qiup =mysqli_query($koneksi_db, "UPDATE mst_menu set nm_menu='$nmenu', link='$nlink',isActive='$aktif'
     WHERE id_menu=$keyid") or die(mysqli_error($koneksi_db));
     if($qiup){
         header("location: http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_menu");

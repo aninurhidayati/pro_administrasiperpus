@@ -4,7 +4,7 @@
 ?>
     <ul class="list-group">
         <a style="text-decoration: none;" href="?modul=<?php echo $row['link']?>">
-            <li class="list-group-item" ><?php echo $row["nm_menu"];?></li>
+            <li class="list-group-item list-group-item-action list-group-item-info" ><?php echo $row["nm_menu"];?></li>
         </a>
     </ul>
 <?php

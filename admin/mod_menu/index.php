@@ -98,7 +98,7 @@
         <div class="row my-2">
             <div class="col-md-2"></div>
             <div class="col-md-6">
-                <input type="checkbox" name="ck_aktif" id="ck_aktif" class="form-check-input">aktif <br>
+                <input type="checkbox" name="ck_aktif" id="ck_aktif" class="form-check-input" <?= $check; ?>>aktif <br>
                 <button type="submit" class="btn btn-outline-success">
                     <i class="bi bi-check-circle-fill">submit</i>
                 </button>

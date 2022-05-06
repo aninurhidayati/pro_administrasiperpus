@@ -17,7 +17,7 @@ require_once("../config/koneksi.php");
     <style>
       .font{
         font-family: 'Righteous', cursive;
-        font-weight: 400;
+        font-weight: 200;
         font-size: 20px;
       }
     </style>
@@ -29,7 +29,7 @@ require_once("../config/koneksi.php");
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand">Admin Perpus</a>
+      <a class="navbar-brand"  ><img src="https://img.freepik.com/free-vector/book-with-lighbulb-cartoon-vector-icon-illustration-object-education-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4009.jpg?t=st=1651848404~exp=1651849004~hmac=5eddd5bbd45a5d9cfbedc2dd143d669358baf750cb8c83440e8415d194e2df90&w=740" width="40rem" height="40rem"> Admin Perpus</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
