@@ -13,7 +13,7 @@ else{
         
     }
     else if(isset($_GET['act']) && ($_GET['act'])=="edit"){
-        $judula = "Form Edit Anggota";
+        $judula = "Form Edit Data Anggota";
         $keyid = $_GET['id'];
         $qiagt = mysqli_query($koneksi_db, "select *from mst_dataagt where id_anggota='$keyid'")
         or die(mysqli_error($koneksi_db));

@@ -4,7 +4,9 @@
 <?php 
     if(!isset($_GET['act'])){
 ?>
-<a href="?modul=mod_databuku&act=add" class="btn btn-outline-primary my-4">Tambah Data</a>
+<a href="?modul=mod_databuku&act=add" class="btn btn-outline-primary my-4">
+<i class="bi bi-plus-square"></i> Tambah Data
+</a>
 <table class="table table-bordered">
     <tr>
         <th class="bg-success text-white">ID buku</th>

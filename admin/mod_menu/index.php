@@ -2,7 +2,9 @@
     include_once "menu_ctrl.php";
     if(!isset($_GET['act'])){
 ?>
-<a href="?modul=mod_menu&act=add" class="btn btn-outline-primary my-4">Tambah Data</a>
+<a href="?modul=mod_menu&act=add" class="btn btn-outline-primary my-4">
+    Tambah Data
+</a>
 <table class="table table-bordered">
     <tr>
         <th class="bg-success text-white">ID menu</th>
@@ -12,7 +14,7 @@
         <th class="bg-success text-white">Action</th>
     </tr>
     <?php
-        $qrylistmenu =mysqli_query($koneksi_db, "select *from mst_menu order by id_menu DESC")
+        $qrylistmenu =mysqli_query($koneksi_db, "select *from mst_menu order by id_menu ASC")
         or die("gagal mengakses".mysqli_error($koneksi_db));
         while($row =mysqli_fetch_array($qrylistmenu)){
     ?>

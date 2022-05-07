@@ -13,7 +13,7 @@ if(isset($_GET['act']) && ($_GET['act']=="add")){
     $judula="Form Input Data Buku";
     }
     else if(isset($_GET['act']) && ($_GET['act']=="edit")){
-        $judulb="Form Input Data Buku";
+        $judulb="Form Edit Data Buku";
         $idkey=$_GET['id'];
         $qbook=mysqli_query($koneksi_db,"select * from mst_databuku where id_buku= '$idkey'") or die(mysqli_error($koneksi_db));
         $datbuku=mysqli_fetch_array($qbook);

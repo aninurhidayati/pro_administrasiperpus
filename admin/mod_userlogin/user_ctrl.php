@@ -13,7 +13,7 @@ if(isset($_GET['act']) && ($_GET['act']=="add")){
     $judula="Form Input Data User";
     }
     else if(isset($_GET['act']) && ($_GET['act']=="edit")){
-        $judulb="Form Input Data User";
+        $judulb="Form Edit Data User";
         $idkey=$_GET['id'];
         $quser=mysqli_query($koneksi_db,"select * from mst_userlogin where id_user= '$idkey'") or die(mysqli_error($koneksi_db));
         $data=mysqli_fetch_array($quser);

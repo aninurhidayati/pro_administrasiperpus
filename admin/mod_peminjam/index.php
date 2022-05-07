@@ -2,7 +2,9 @@
     include_once "peminjam_ctrl.php";
     if(!isset($_GET['act'])){
 ?>
-<a href="?modul=mod_peminjam&act=add" class="btn btn-outline-primary my-4">Tambah Data</a>
+<a href="?modul=mod_peminjam&act=add" class="btn btn-outline-primary my-4">
+    <i class="bi bi-person-plus-fill"></i> Tambah Data
+</a>
 <table class="table table-bordered">
     <tr>
         <th class="bg-success text-white">ID peminjam</th>
@@ -12,7 +14,7 @@
         <th class="bg-success text-white">Action</th>
     </tr>
     <?php
-        $qry_listpjm =mysqli_query($koneksi_db, "select *from mst_datapinjam order by id_peminjam DESC")
+        $qry_listpjm =mysqli_query($koneksi_db, "select *from mst_datapinjam order by id_peminjam ASC")
         or die("gagal mengakses". mysqli_error($koneksi_db));
         while($row =mysqli_fetch_array($qry_listpjm)){
     ?>

@@ -2,7 +2,9 @@
     include_once "anggota_ctrl.php";
     if(!isset($_GET['act'])){
 ?>
-<a href="?modul=mod_anggota&act=add" class="btn btn-outline-primary my-4">Tambah Data</a>
+<a href="?modul=mod_anggota&act=add" class="btn btn-outline-primary my-4 ">
+    <i class="bi bi-person-plus-fill"></i> Tambah Data
+</a>
 <table class="table table-bordered">
     <tr>
         <th class="bg-success text-white">ID anggota</th>
@@ -11,7 +13,7 @@
         <th class="bg-success text-white">action</th>
     </tr>
         <?php
-            $qry_listagt =mysqli_query ($koneksi_db, "select * from mst_dataagt order by id_anggota DESC")
+            $qry_listagt =mysqli_query ($koneksi_db, "select * from mst_dataagt order by id_anggota ASC")
             or die("gagal mengakses table user".mysqli_error($koneksi_db));
             while($row =mysqli_fetch_array($qry_listagt)){
         ?>
