@@ -72,6 +72,9 @@
             </div>
             <div class="col-md-6">
                 <input type="text" name="txt_jmlbuku" id="txt_jmlbuku" class="form-control"><br>
+                <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_databuku" class="btn btn-outline-dark">
+                    <i class="bi bi-arrow-left-circle-fill">Back</i>
+                </a>
                 <button type="submit" class="btn btn-outline-success">
                     <i class="bi bi-check-circle-fill"> submit</i>
                 </button>
@@ -120,12 +123,15 @@
                 </div>
                 <div class="col-md-6">
                     <input type="text" name="txt_jmlbuku" class="form-control" value="<?= $datbuku['jumlah_buku'];?>"><br>
+                    <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_databuku"class="btn btn-outline-dark">
+                        <i class="bi bi-arrow-left-circle-fill">Back</i>
+                    </a>
                     <button type="submit" class="btn btn-outline-success">
                         <i class="bi bi-check-circle-fill"> submit</i>
                     </button>
-                <button type="reset" class="btn btn-outline-danger">
-                    <i class="bi bi-x-circle-fill"> reset</i> 
-                </button>
+                    <button type="reset" class="btn btn-outline-danger">
+                        <i class="bi bi-x-circle-fill"> reset</i> 
+                    </button>
             </div>
         </div>
     </form>

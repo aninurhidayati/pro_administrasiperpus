@@ -59,6 +59,9 @@
             <div class="col-md-6">
                 <input type="password" name="txt_pass" id="txt_user" class="form-control"><br>
                 <input type="checkbox" name="ck_aktif" id="ck_aktif" class="form-check-input">aktif <br>
+                <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_userlogin"class="btn btn-outline-dark">
+                    <i class="bi bi-arrow-left-circle-fill">Back</i>
+                </a>
                 <button type="submit" class="btn btn-outline-success">
                     <i class="bi bi-check-circle-fill"> submit</i>
                 </button>
@@ -91,7 +94,10 @@
                 </div>
                 <div class="col-md-6">
                     <input type="password" name="txt_pass" class="form-control" value="<?=$data['password'];?>"><br>
-                        <input type="checkbox" name="ck_aktif" id="ck_aktif" class="form-check-input" <?php echo $check; ?>>aktif <br>
+                    <input type="checkbox" name="ck_aktif" id="ck_aktif" class="form-check-input" <?php echo $check; ?>>aktif <br>
+                    <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_userlogin"class="btn btn-outline-dark">
+                        <i class="bi bi-arrow-left-circle-fill">Back</i>
+                    </a>
                     <button type="submit" class="btn btn-outline-success">
                         <i class="bi bi-check-circle-fill"> submit</i>
                     </button>

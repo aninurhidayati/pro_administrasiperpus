@@ -63,6 +63,9 @@
             </div>
             <div class="col-md-6">
                 <input type="date" name="txt_tglpinjam" id="" class="form-control"><br>
+                <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_peminjam"class="btn btn-outline-dark">
+                    <i class="bi bi-arrow-left-circle-fill">Back</i>
+                </a>
                 <button type="submit" class="btn btn-outline-success">
                     <i class="bi bi-check-circle-fill"> submit</i>
                 </button>
@@ -103,6 +106,9 @@
             </div>
             <div class="col-md-6">
                 <input type="date" name="txt_tglpinjam" class="form-control" value="<?=$data['tgl_pinjam'];?>"><br>
+                <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_peminjam"class="btn btn-outline-dark">
+                    <i class="bi bi-arrow-left-circle-fill">Back</i>
+                </a>
                 <button type="submit" class="btn btn-outline-success">
                     <i class="bi bi-check-circle-fill"> submit</i>
                 </button>

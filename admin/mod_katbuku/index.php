@@ -54,6 +54,9 @@
             </div>
             <div class="col-md-6">
                 <input type="text" name="txt_katbuku" class="form-control"><br>
+                <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_katbuku"class="btn btn-outline-dark">
+                    <i class="bi bi-arrow-left-circle-fill">Back</i>
+                </a>
                 <button type="submit" class="btn btn-outline-success">
                     <i class="bi bi-check-circle-fill"> submit</i>
                 </button>
@@ -86,6 +89,9 @@
                 </div>
                 <div class="col-md-6">
                     <input type="text" name="txt_katbuku" class="form-control" value="<?=$databuku['kt_buku'];?>"><br>
+                    <a href="http://localhost/project_uts/pro_administrasiperpus/admin/home.php?modul=mod_katbuku"class="btn btn-outline-dark">
+                        <i class="bi bi-arrow-left-circle-fill">Back</i>
+                    </a>
                     <button type="submit" class="btn btn-outline-success">
                         <i class="bi bi-check-circle-fill"> submit</i>
                     </button>

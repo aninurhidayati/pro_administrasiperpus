@@ -16,23 +16,30 @@ require_once("../config/koneksi.php");
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <style>
       .font{
-        font-family: 'Righteous', cursive;
-        font-weight: 200;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
         font-size: 20px;
+      }
+      .lengkung{
+        border: 2px solid white;
+        border-radius: 3px;
       }
     </style>
 </head>
 <body class="font">
-<nav class="navbar navbar-expand-md navbar-light bg-success">
+<nav class="navbar navbar-expand-md navbar-dark bg-success ">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand"  ><img src="https://img.freepik.com/free-vector/book-with-lighbulb-cartoon-vector-icon-illustration-object-education-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4009.jpg?t=st=1651848404~exp=1651849004~hmac=5eddd5bbd45a5d9cfbedc2dd143d669358baf750cb8c83440e8415d194e2df90&w=740" width="40rem" height="40rem"> Admin Perpus</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-itemmx-3">
+          <a class="btn btn-outline-light" aria-current="page" href="../admin/home.php">Home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="btn btn-outline-light" aria-current="page" href="../index.php">sign out</a>
         </li>
     </div>
   </div>
@@ -44,7 +51,7 @@ require_once("../config/koneksi.php");
                 include_once("menu.php");
             ?>
         </div>
-        <div class="col-md-9 ">
+        <div class="col-md-9">
         <?php
             if(isset($_GET['modul'])){
               include "".$_GET['modul']."/index.php";
