@@ -3,7 +3,7 @@
     if(!isset($_GET['act'])){
 ?>
 <a href="?modul=mod_menu&act=add" class="btn btn-outline-primary my-4">
-    Tambah Data
+    <i class="bi bi-folder-plus"></i> Tambah Data
 </a>
 <table class="table table-bordered">
     <tr>
