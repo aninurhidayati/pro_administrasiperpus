@@ -1,4 +1,4 @@
-<?php
+<?php 
     include_once "menu_ctrl.php";
     if(!isset($_GET['act'])){
 ?>
